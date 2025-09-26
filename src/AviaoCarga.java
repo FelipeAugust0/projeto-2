@@ -6,17 +6,17 @@ public class AviaoCarga extends TransporteAereo {
         this.autonomiaHoras = autonomiaHoras;
     }
 
-    @Override
-    public double calcularFrete(double distancia, double peso) {
-        double base = super.calcularFrete(distancia, peso);
-        return base * 1.10;
-    }
-
     public double getAutonomiaHoras() {
         return autonomiaHoras;
     }
 
     public void setAutonomiaHoras(double autonomiaHoras) {
         this.autonomiaHoras = autonomiaHoras;
+    }
+
+    @Override
+    public double calcularFrete(double distancia, double peso) {
+        double base = super.calcularFrete(distancia, peso);
+        return base * 1.10;
     }
 }

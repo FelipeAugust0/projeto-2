@@ -8,13 +8,6 @@ public class TransporteAereo extends Transporte {
         this.taxaSeguranca = taxaSeguranca;
     }
 
-    // Regra do enunciado:
-    // frete = (distancia * 0.80) + (peso * 0.30) + taxaSeguranca
-    @Override
-    public double calcularFrete(double distancia, double peso) {
-        return (distancia * 0.80) + (peso * 0.30) + taxaSeguranca;
-    }
-
     public double getAltitudeMax() {
         return altitudeMax;
     }
@@ -30,5 +23,9 @@ public class TransporteAereo extends Transporte {
     public void setTaxaSeguranca(double taxaSeguranca) {
         this.taxaSeguranca = taxaSeguranca;
     }
+    public double calcularFrete(double distancia, double peso) {
+        return (distancia * 0.80) + (peso * 0.30) + 150;
+    }
+
 }
 

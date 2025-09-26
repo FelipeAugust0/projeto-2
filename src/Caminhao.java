@@ -13,9 +13,10 @@ public class Caminhao extends TransporteTerrestre {
     public void setTipoCarga(String tipoCarga) {
         this.tipoCarga = tipoCarga;
     }
+
     @Override
     public double calcularFrete(double distancia, double peso) {
         double base = super.calcularFrete(distancia, peso);
-        return base * 1.20;
+        return base * 1.2;
     }
 }
