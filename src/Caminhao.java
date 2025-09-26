@@ -27,7 +27,7 @@ public class Caminhao extends TransporteTerrestre {
     }
 
     @Override
-    public double calcularPrazoEntrega(double distancia, double velocidadeMedia){
-        return distancia / velocidadeMedia;
+    public double calcularPrazoEntrega(double distancia, double velocidadeMedia) {
+        return super.calcularPrazoEntrega(distancia, velocidadeMedia);
     }
 }

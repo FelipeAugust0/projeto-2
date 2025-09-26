@@ -35,5 +35,9 @@ public class TransporteAereo extends Transporte {
         return (distancia * 0.80) + (peso * 0.30) + 150;
     }
 
+    public double calcularPrazoEntrega(double distancia, double velocidadeMedia){
+        return distancia / velocidadeMedia;
+    }
+
 }
 

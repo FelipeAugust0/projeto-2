@@ -25,4 +25,9 @@ public class AviaoCarga extends TransporteAereo {
         double base = super.calcularFrete(distancia, peso);
         return base * 1.10;
     }
+
+    @Override
+    public double calcularPrazoEntrega(double distancia, double velocidadeMedia) {
+        return super.calcularPrazoEntrega(distancia, velocidadeMedia);
+    }
 }
