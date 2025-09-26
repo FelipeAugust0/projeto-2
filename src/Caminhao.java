@@ -1,8 +1,14 @@
 public class Caminhao extends TransporteTerrestre {
     private String tipoCarga;
 
-    public Caminhao(double capacidadeKg, double velocidadeMedia, int numeroEixos, String tipoCombustivel, String tipoCarga) {
-        super(capacidadeKg, velocidadeMedia, numeroEixos, tipoCombustivel);
+    public Caminhao(int numeroEixos, String tipoCombustivel, String tipoCarga) {
+        super(numeroEixos, tipoCombustivel);
+        this.tipoCarga = tipoCarga;
+    }
+
+    public Caminhao(double capacidadeKg, double velocidadeMedia, double distancia, double peso, int numeroEixos,
+            String tipoCombustivel, String tipoCarga) {
+        super(capacidadeKg, velocidadeMedia, distancia, peso, numeroEixos, tipoCombustivel);
         this.tipoCarga = tipoCarga;
     }
 
@@ -18,5 +24,10 @@ public class Caminhao extends TransporteTerrestre {
     public double calcularFrete(double distancia, double peso) {
         double base = super.calcularFrete(distancia, peso);
         return base * 1.2;
+    }
+
+    @Override
+    public double calcularPrazoEntrega(double distancia, double velocidadeMedia){
+        return distancia / velocidadeMedia;
     }
 }

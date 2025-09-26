@@ -1,8 +1,14 @@
 public class AviaoCarga extends TransporteAereo {
     private double autonomiaHoras;
 
-    public AviaoCarga(double capacidadeKg, double velocidadeMedia, double altitudeMax, double taxaSeguranca, double autonomiaHoras) {
-        super(capacidadeKg, velocidadeMedia, altitudeMax, taxaSeguranca);
+    public AviaoCarga(double altitudeMax, double taxaSeguranca, double autonomiaHoras) {
+        super(altitudeMax, taxaSeguranca);
+        this.autonomiaHoras = autonomiaHoras;
+    }
+
+    public AviaoCarga(double capacidadeKg, double velocidadeMedia, double distancia, double peso, double altitudeMax,
+            double taxaSeguranca, double autonomiaHoras) {
+        super(capacidadeKg, velocidadeMedia, distancia, peso, altitudeMax, taxaSeguranca);
         this.autonomiaHoras = autonomiaHoras;
     }
 

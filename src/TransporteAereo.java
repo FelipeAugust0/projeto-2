@@ -2,8 +2,15 @@ public class TransporteAereo extends Transporte {
     private double altitudeMax;
     private double taxaSeguranca; // usar conforme enunciado (ex.: 150)
 
-    public TransporteAereo(double capacidadeKg, double velocidadeMedia, double altitudeMax, double taxaSeguranca) {
-        super(capacidadeKg, velocidadeMedia);
+
+    public TransporteAereo(double altitudeMax, double taxaSeguranca) {
+        this.altitudeMax = altitudeMax;
+        this.taxaSeguranca = taxaSeguranca;
+    }
+
+    public TransporteAereo(double capacidadeKg, double velocidadeMedia, double distancia, double peso,
+            double altitudeMax, double taxaSeguranca) {
+        super(capacidadeKg, velocidadeMedia, distancia, peso);
         this.altitudeMax = altitudeMax;
         this.taxaSeguranca = taxaSeguranca;
     }
@@ -23,6 +30,7 @@ public class TransporteAereo extends Transporte {
     public void setTaxaSeguranca(double taxaSeguranca) {
         this.taxaSeguranca = taxaSeguranca;
     }
+
     public double calcularFrete(double distancia, double peso) {
         return (distancia * 0.80) + (peso * 0.30) + 150;
     }
