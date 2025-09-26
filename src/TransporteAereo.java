@@ -1,6 +1,6 @@
 public class TransporteAereo extends Transporte {
     private double altitudeMax;
-    private double taxaSeguranca; // usar conforme enunciado (ex.: 150)
+    private double taxaSeguranca;
 
 
     public TransporteAereo(double altitudeMax, double taxaSeguranca) {
