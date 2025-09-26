@@ -1,28 +1,21 @@
-public class Caminhao extends TransporteTerrestre{
-    private String modeloCaminhao;
-    private String placa;
-    
-    public Caminhao(Double distancia, Double pesoCarga, Double capacidadePeso, Double velocidadeMedia, String tipoCarga,
-            String tipoCombustivel, int numeroEixos, String modeloCaminhao, String placa, double frete) {
-        super(distancia, pesoCarga, capacidadePeso, velocidadeMedia, tipoCarga, tipoCombustivel, numeroEixos, frete);
-        this.modeloCaminhao = modeloCaminhao;
-        this.placa = placa;
-    }
-    //alterações
+public class Caminhao extends TransporteTerrestre {
+    private String tipoCarga;
 
-    public String getModeloCaminhao() {
-        return modeloCaminhao;
+    public Caminhao(double capacidadeKg, double velocidadeMedia, int numeroEixos, String tipoCombustivel, String tipoCarga) {
+        super(capacidadeKg, velocidadeMedia, numeroEixos, tipoCombustivel);
+        this.tipoCarga = tipoCarga;
     }
 
-    public void setModeloCaminhao(String modeloCaminhao) {
-        this.modeloCaminhao = modeloCaminhao;
+    public String getTipoCarga() {
+        return tipoCarga;
     }
 
-    public String getPlaca() {
-        return placa;
+    public void setTipoCarga(String tipoCarga) {
+        this.tipoCarga = tipoCarga;
     }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    @Override
+    public double calcularFrete(double distancia, double peso) {
+        double base = super.calcularFrete(distancia, peso);
+        return base * 1.20;
     }
 }

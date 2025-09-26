@@ -1,60 +1,44 @@
-public class Transporte{
-    private double distancia;
-    private double pesoCarga;
-    private double capacidadePeso;
+public class Transporte {
+    private double capacidadeKg;
     private double velocidadeMedia;
-    private String tipoCarga;
-    private double frete;
 
-    public Transporte(Double distancia, Double pesoCarga, Double capacidadePeso, Double velocidadeMedia,
-            String tipoCarga, double frete) {
-        this.distancia = distancia;
-        this.pesoCarga = pesoCarga;
-        this.capacidadePeso = capacidadePeso;
+    public Transporte() {
+    }
+
+    public Transporte(double capacidadeKg, double velocidadeMedia) {
+        this.capacidadeKg = capacidadeKg;
         this.velocidadeMedia = velocidadeMedia;
-        this.tipoCarga = tipoCarga;
-        this.frete = frete;
+    }
 
+    // Regra padrão: sobrescrever nas subclasses
+    public double calcularFrete(double distancia, double peso) {
+        return 0.0;
     }
-    public Double getDistancia() {
-        return distancia;
+
+    // Prazo padrão (horas) = distancia / velocidadeMedia
+    public double calcularPrazoEntrega(double distancia) {
+        if (velocidadeMedia <= 0) return Double.POSITIVE_INFINITY;
+        return distancia / velocidadeMedia;
     }
-    public double getFrete() {
-        return frete;
+
+    public double getCapacidadeKg() {
+        return capacidadeKg;
     }
-    public void setFrete(double frete) {
-        this.frete = frete;
+
+    public void setCapacidadeKg(double capacidadeKg) {
+        this.capacidadeKg = capacidadeKg;
     }
-    public void setDistancia(Double distancia) {
-        this.distancia = distancia;
-    }
-    public Double getPesoCarga() {
-        return pesoCarga;
-    }
-    public void setPesoCarga(Double pesoCarga) {
-        this.pesoCarga = pesoCarga;
-    }
-    public Double getCapacidadePeso() {
-        return capacidadePeso;
-    }
-    public void setCapacidadePeso(Double capacidadePeso) {
-        this.capacidadePeso = capacidadePeso;
-    }
-    public Double getVelocidadeMedia() {
+
+    public double getVelocidadeMedia() {
         return velocidadeMedia;
     }
-    public void setVelocidadeMedia(Double velocidadeMedia) {
+
+    public void setVelocidadeMedia(double velocidadeMedia) {
         this.velocidadeMedia = velocidadeMedia;
     }
-    public String getTipoCarga() {
-        return tipoCarga;
-    }
-    public void setTipoCarga(String tipoCarga) {
-        this.tipoCarga = tipoCarga;
-    }
 
-    public void calcularFrete(Double distancia, Double pesoCarga){
-        
+    @Override
+    public String toString() {
+        return String.format("Transporte[capacidadeKg=%.2f, velocidadeMedia=%.2f]", capacidadeKg, velocidadeMedia);
     }
 }
-

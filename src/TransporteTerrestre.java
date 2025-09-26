@@ -1,11 +1,22 @@
-public class TransporteTerrestre extends Transporte{
-    private String tipoCombustivel;
+public class TransporteTerrestre extends Transporte {
     private int numeroEixos;
-    
-    public TransporteTerrestre(Double distancia, Double pesoCarga, Double capacidadePeso, Double velocidadeMedia,
-            String tipoCarga, String tipoCombustivel, int numeroEixos, double frete) {
-        super(distancia, pesoCarga, capacidadePeso, velocidadeMedia, tipoCarga, frete);
+    private String tipoCombustivel;
+
+    public TransporteTerrestre(double capacidadeKg, double velocidadeMedia, int numeroEixos, String tipoCombustivel) {
+        super(capacidadeKg, velocidadeMedia);
+        this.numeroEixos = numeroEixos;
         this.tipoCombustivel = tipoCombustivel;
+    }
+    @Override
+    public double calcularFrete(double distancia, double peso) {
+        return (distancia * 0.50) + (peso * 0.10);
+    }
+
+    public int getNumeroEixos() {
+        return numeroEixos;
+    }
+
+    public void setNumeroEixos(int numeroEixos) {
         this.numeroEixos = numeroEixos;
     }
 
@@ -15,13 +26,5 @@ public class TransporteTerrestre extends Transporte{
 
     public void setTipoCombustivel(String tipoCombustivel) {
         this.tipoCombustivel = tipoCombustivel;
-    }
-
-    public int getNumeroEixos() {
-        return numeroEixos;
-    }
-
-    public void setNumeroEixos(int numeroEixos) {
-        this.numeroEixos = numeroEixos;
     }
 }
