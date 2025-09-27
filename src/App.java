@@ -38,7 +38,7 @@ public class App {
                                     || combustivel.equals("etanol")) {
                                 break;
                             } else {
-                                System.out.println("Erro: digite apenas diesel, gasolina ou etanol.\n");
+                                System.out.println("Erro: digite apenas diesel, gasolina ou etanol.");
                             }
                         }
 
