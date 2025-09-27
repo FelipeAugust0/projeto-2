@@ -49,7 +49,7 @@ public class App {
                             if (tipoCarga.equals("seca") || tipoCarga.equals("refrigerada")) {
                                 break;
                             } else {
-                                System.out.println("Erro: digite apenas 'seca' ou 'refrigerada'.");
+                                System.out.println("Erro: digite apenas seca ou refrigerada.");
                             }
                         }
 
