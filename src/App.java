@@ -80,20 +80,24 @@ public class App {
                         double distA = lerDouble(sc, "Distância (km): ");
                         double pesoA = lerDouble(sc, "Peso da Carga (Kg): ");
 
-                        AviaoCarga aviao = new AviaoCarga(capA, velA, distA, pesoA, alt, pesoA, auto);
-                        transportes.add(aviao);
-                        double freteA = aviao.calcularFrete(distA, pesoA);
-                        fretes.add(freteA);
-                        double prazoA = aviao.calcularPrazoEntrega(distA, velA);
-                        prazos.add(prazoA);
-                        System.out.printf("Frete: R$ %.2f", freteA);
-                        System.out.printf("\nPrazo: %.2f horas\n", prazoA);
-
                         while (pesoA > capA) {
                             System.out.println(
                                     "Erro: o peso da carga não pode ser maior que a capacidade (" + capA + " Kg).");
                             pesoA = lerDouble(sc, "Digite novamente o Peso da Carga (Kg): ");
                         }
+
+                        AviaoCarga aviao = new AviaoCarga(capA, velA, distA, pesoA, alt, pesoA, auto);
+                        transportes.add(aviao);
+
+                        double freteA = aviao.calcularFrete(distA, pesoA);
+                        fretes.add(freteA);
+
+                        double prazoA = aviao.calcularPrazoEntrega(distA, velA);
+                        prazos.add(prazoA);
+
+                        System.out.printf("Frete: R$ %.2f", freteA);
+                        System.out.printf("\nPrazo: %.2f horas\n", prazoA);
+
                         break;
 
                     case 3:
