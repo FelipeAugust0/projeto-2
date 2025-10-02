@@ -44,9 +44,5 @@ public class Transporte {
     public void setVelocidadeMedia(double velocidadeMedia) {
         this.velocidadeMedia = velocidadeMedia;
     }
-
-    public double calcularPrazoEntrega(double distancia){
-        return distancia / this.velocidadeMedia;
-    }
 }
 
