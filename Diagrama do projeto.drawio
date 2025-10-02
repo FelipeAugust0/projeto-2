@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Página-1" id="Rxm3Yj-uflySH85OKoJG">
+    <mxGraphModel dx="1042" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1sAxrUjWSzngS553KDRs-5" value="Transporte" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="90" width="330" height="252" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-6" value="- distancia: double&lt;div&gt;- pesoCarga: double&lt;/div&gt;&lt;div&gt;- capacidadeKG: double&lt;/div&gt;&lt;div&gt;- velocidadeMedia: double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-5" vertex="1">
+          <mxGeometry y="26" width="330" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1sAxrUjWSzngS553KDRs-5" vertex="1">
+          <mxGeometry y="120" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-8" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;+ calcularFrete(distancia: double; peso: double): double&lt;div&gt;+ calcularPrazoEntrega(distancia: double): double&lt;/div&gt;&lt;div&gt;+ getters&lt;/div&gt;&lt;div&gt;+ setters&lt;/div&gt;&lt;div&gt;+ constructors&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-5" vertex="1">
+          <mxGeometry y="128" width="330" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-9" value="TransporteTerrestre" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="400" width="390" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-10" value="- numeroEixos: int&lt;div&gt;- tipoCombustivel: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-9" vertex="1">
+          <mxGeometry y="30" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1sAxrUjWSzngS553KDRs-9" vertex="1">
+          <mxGeometry y="80" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-12" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;calcularFrete&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(distancia: double; peso: double): double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;calcularPrazoEntrega(double distancia, double velocidadeMedia)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getters&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ setters&lt;/div&gt;&lt;div&gt;+ constructors&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-9" vertex="1">
+          <mxGeometry y="88" width="390" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-13" value="Caminhao" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="710" width="300" height="190" as="geometry">
+            <mxRectangle x="120" y="680" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-14" value="&lt;div&gt;- tipoCarga: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-13" vertex="1">
+          <mxGeometry y="26" width="300" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1sAxrUjWSzngS553KDRs-13" vertex="1">
+          <mxGeometry y="70" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-16" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;calcularFrete&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(distancia: double; peso: double): double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;calcularPrazoEntrega(double distancia, double velocidadeMedia)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getters&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ setters&lt;/div&gt;&lt;div&gt;+ constructors&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-13" vertex="1">
+          <mxGeometry y="78" width="300" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-17" value="AviaoCarga" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="690" y="710" width="270" height="170" as="geometry">
+            <mxRectangle x="130" y="780" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-18" value="- autonomiaHoras: double&lt;div&gt;- modeloAviao: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-17" vertex="1">
+          <mxGeometry y="26" width="270" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1sAxrUjWSzngS553KDRs-17" vertex="1">
+          <mxGeometry y="70" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-20" value="+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;calcularFrete&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(distancia: double; peso: double): double&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ calcularPrazoEntrega(double distancia, double velocidadeMedia)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ setters&lt;/div&gt;&lt;div&gt;+ constructors&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-17" vertex="1">
+          <mxGeometry y="78" width="270" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-21" value="TransporteAereo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="400" width="310" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-22" value="- altitudeMax: double&lt;div&gt;- taxaSeguranca: double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-21" vertex="1">
+          <mxGeometry y="30" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1sAxrUjWSzngS553KDRs-21" vertex="1">
+          <mxGeometry y="80" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1sAxrUjWSzngS553KDRs-24" value="+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;calcularFrete&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(distancia: double; peso: double): double&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;+ calcularPrazoEntrega(double distancia, double velocidadeMedia)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;+ getters&lt;/div&gt;&lt;div&gt;+ setters&lt;/div&gt;&lt;div&gt;+ constructors&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1sAxrUjWSzngS553KDRs-21" vertex="1">
+          <mxGeometry y="88" width="310" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="7CQoElJGaYWQYmxT39Bh-1" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=-0.011;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.45;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1sAxrUjWSzngS553KDRs-6" target="1sAxrUjWSzngS553KDRs-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230" y="170" as="sourcePoint" />
+            <mxPoint x="390" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="306" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CQoElJGaYWQYmxT39Bh-2" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=1.005;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.558;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1sAxrUjWSzngS553KDRs-6" target="1sAxrUjWSzngS553KDRs-21" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1000" y="250" as="sourcePoint" />
+            <mxPoint x="880" y="437" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="853" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CQoElJGaYWQYmxT39Bh-3" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.481;exitY=1.012;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1sAxrUjWSzngS553KDRs-24" target="1sAxrUjWSzngS553KDRs-17" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="660" as="sourcePoint" />
+            <mxPoint x="750" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CQoElJGaYWQYmxT39Bh-4" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.471;exitY=1.006;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1sAxrUjWSzngS553KDRs-12" target="1sAxrUjWSzngS553KDRs-13" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="824" y="630" as="sourcePoint" />
+            <mxPoint x="820" y="739" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
